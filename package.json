@@ -16,10 +16,5 @@
   "bugs": {
     "url": "https://github.com/lekegitrepo/travel-app/issues"
   },
-  "homepage": "https://github.com/lekegitrepo/travel-app#readme",
-  "devDependencies": {
-    "eslint": "^6.8.0",
-    "eslint-config-airbnb-base": "^14.1.0",
-    "eslint-plugin-import": "^2.20.2"
-  }
+  "homepage": "https://github.com/lekegitrepo/travel-app#readme"
 }
