@@ -1,0 +1,20 @@
+{
+  "name": "travel-app",
+  "version": "1.0.0",
+  "description": "### Built with NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lekegitrepo/travel-app.git"
+  },
+  "keywords": [],
+  "author": "Adeleke Temitayo <mailadeleketemitayo@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lekegitrepo/travel-app/issues"
+  },
+  "homepage": "https://github.com/lekegitrepo/travel-app#readme"
+}
