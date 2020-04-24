@@ -32,8 +32,11 @@ app.get('/', function(req, res){
 
 app.get('/about', function(req, res){
   //let randomFortune = fortunes[Math.floor(Math.random() * fortunes.length)];
-  res.render('about', {fortune: fortune.getFortune()});
-})
+    res.render('about', {
+      fortune: fortune.getFortune(),
+      pageTestScript: '/qa/tests-about.js'
+    });
+});
 
 // custom 404 page
 app.use(function(req, res){
