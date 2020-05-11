@@ -3,13 +3,16 @@
 <head>
   <title>Dreamline Travels</title>
   {{#if showTests}}
-    <link rel="stylesheet" type="text/css" href="/vendor/mocha.css">
+    <link rel="stylesheet" href="/vendor/mocha.css">
   {{/if}}
-    <script src="https://code.jquery.com/jquery-3.5.0.slim.min.js" integrity="sha256-MlusDLJIP1GRgLrOflUQtshyP0TwT/RHXsI1wWGnQhs=" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header><img src="/img/logo.jpg" alt="logo"></header>
+  <header><img src="/img/logo.png" alt="logo"></header>
   {{{body}}}
+
+    <script src="https://code.jquery.com/jquery-3.5.0.slim.min.js" integrity="sha256-MlusDLJIP1GRgLrOflUQtshyP0TwT/RHXsI1wWGnQhs=" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="/vendor/js/jquery-3.5.0.slim.min.js"><\/script>')</script>
+  {{{_sections.jquery}}}
 
   {{#if showTests}}
     <div id="mocha"></div>
@@ -21,7 +24,7 @@
     </script>
     <script src="/qa/tests-global.js"></script>
     {{#if pageTestScript}}
-      <script src"{{pageTestScript}}"></script>
+      <script src="{{pageTestScript}}"></script>
     {{/if}}
       <script>mocha.run();</script>
   {{/if}}
