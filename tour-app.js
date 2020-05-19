@@ -52,6 +52,13 @@ app.get('/tours/request-group-rate', function(req, res){
  res.render('tours/request-group-rate');
 });
 
+app.get('/headers', (req, res) => {
+  res.set('Content-type', 'text/plain');
+  let s = '';
+  for(let name in req.headers) s += name + ': ' + req.headers[name] + '\n';
+  res.send(s);
+})
+
 // custom 404 page
 app.use(function(req, res){
   res.status(404);
