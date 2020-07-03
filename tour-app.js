@@ -29,6 +29,8 @@ app.use(function(req, res, next){
   next();
 });
 
+app.disable('x-powered-by');
+
 app.get('/', function(req, res){
   res.render('home');
 });
