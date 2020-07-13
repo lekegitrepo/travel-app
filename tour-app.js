@@ -8,6 +8,7 @@ const credentials = require('./credentials.js');
 let app = express();
 
 app.use(require('cookie-parser')(credentials.cookieSecret));
+app.use(require('express-session')());
 
 let handlebars = require('express3-handlebars').create({
   defaultLayout:'main',
