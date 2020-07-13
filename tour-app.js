@@ -3,8 +3,11 @@
 let express = require('express');
 let fortune = require('./lib/fortune.js');
 const formidable = require('formidable');
+const credentials = require('./credentials.js');
 
 let app = express();
+
+app.use(require('cookie-parser')(credentials.cookieSecret));
 
 let handlebars = require('express3-handlebars').create({
   defaultLayout:'main',
